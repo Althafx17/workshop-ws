@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AstroCode 2026 | Next-Gen Web & Creative Coding Workshop</title>
+  <meta name="description" content="Join AstroCode 2026, an immersive 3-day workshop on creative web development, modern CSS, WebGL, animations, and building stellar interactive user interfaces.">
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+  <!-- Background Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="logo.webp" alt="AstroCode Logo" class="logo-img">ASTROCODE
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#" class="nav-link active">Home</a></li>
+        <li><a href="#learn" class="nav-link">What You'll Learn</a></li>
+        <li><a href="#schedule" class="nav-link">Schedule</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><button class="btn-nav open-modal-btn">Register</button></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          <span>Limited to 150 Seats Globally</span>
+        </div>
+        <h1 class="hero-title">Craft the Future of the <span class="text-gradient-cyan-blue">Interactive Web</span></h1>
+        <p class="hero-desc">
+          An immersive 3-day advanced workshop dedicated to creative coding, WebGL/Canvas mechanics, next-generation layouts, and interactive design aesthetics. Elevate your development skills into art.
+        </p>
+        <div class="hero-actions">
+          <button class="btn-primary open-modal-btn">Secure Your Seat</button>
+          <a href="#learn" class="btn-secondary">Explore Program</a>
+        </div>
+        
+        <!-- Countdown Timer Panel -->
+        <div class="countdown-box">
+          <h4 class="countdown-title">The Launch Begins In</h4>
+          <div class="countdown-timer" id="countdown">
+            <div class="timer-segment">
+              <span class="timer-val" id="days">00</span>
+              <span class="timer-unit">Days</span>
+            </div>
+            <div class="timer-segment">
+              <span class="timer-val" id="hours">00</span>
+              <span class="timer-unit">Hours</span>
+            </div>
+            <div class="timer-segment">
+              <span class="timer-val" id="minutes">00</span>
+              <span class="timer-unit">Mins</span>
+            </div>
+            <div class="timer-segment">
+              <span class="timer-val" id="seconds">00</span>
+              <span class="timer-unit">Secs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Drag/Hover Floating Card Visual -->
+      <div class="hero-visual">
+        <div class="hero-blob"></div>
+        <div class="hero-card-interactive glow-border" id="interactive-card">
+          <h3>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gradient-pink-purple"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Workshop Overview
+          </h3>
+          <div class="detail-item">
+            <div class="detail-icon">📅</div>
+            <div class="detail-text">
+              <h4>Date & Time</h4>
+              <p>Oct 15 - 17, 2026 | 5:00 PM GMT</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">🌐</div>
+            <div class="detail-text">
+              <h4>Location</h4>
+              <p>Live Digital Interactive Stream</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">🎓</div>
+            <div class="detail-text">
+              <h4>Experience Level</h4>
+              <p>Intermediate to Advanced</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">✨</div>
+            <div class="detail-text">
+              <h4>Format</h4>
+              <p>Hands-on labs & Project builds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What You Will Learn Section -->
+  <section class="learn-section" id="learn">
+    <div class="section-bg-blob-1"></div>
+    <div class="section-bg-blob-2"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Core Syllabus</span>
+        <h2 class="section-title">What You Will <span class="text-gradient-pink-purple">Master</span></h2>
+      </div>
+      <div class="learn-grid">
+        <!-- Card 1 -->
+        <div class="learn-card card-1 glow-border">
+          <div class="learn-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <h3>Creative Coding Foundations</h3>
+          <p>Learn how to program motion, design generative systems, and manipulate vectors. Tap into visual mathematical foundations using JS canvas APIs.</p>
+          <ul class="learn-list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Trigonometry & Physics for Devs
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Particle & Node systems
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Interactive physics environments
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="learn-card card-2 glow-border">
+          <div class="learn-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+          </div>
+          <h3>WebGL & Interactive Math</h3>
+          <p>Delve into shaders, 3D render pipelines, and responsive math. Write high-performance graphics code that renders at a blistering 60 FPS.</p>
+          <ul class="learn-list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Intro to GLSL fragment shaders
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Gradient mesh generation
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              GPU accelerated animations
+            </li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="learn-card card-3 glow-border">
+          <div class="learn-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+          </div>
+          <h3>Next-Gen UI Mechanics</h3>
+          <p>Leverage modern CSS capabilities, Scroll-Timeline, View Transitions, and micro-interactions to create interfaces that feel alive and responsive.</p>
+          <ul class="learn-list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              View Transition API workflows
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Complex scroll-linked animations
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Fluid layouts & custom easing
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3-Day Calendar Section -->
+  <section class="schedule-section" id="schedule">
+    <div class="section-bg-blob-1"></div>
+    <div class="section-bg-blob-2"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Workshop Agenda</span>
+        <h2 class="section-title">The Three-Day <span class="text-gradient-orange-pink">Journey</span></h2>
+      </div>
+
+      <div class="calendar-container">
+        <!-- Day Navigation Tabs -->
+        <div class="calendar-tabs">
+          <button class="tab-btn active" data-tab="day1">
+            Day 01
+            <span>Genesis & Canvas</span>
+          </button>
+          <button class="tab-btn" data-tab="day2">
+            Day 02
+            <span>WebGL & Motion</span>
+          </button>
+          <button class="tab-btn" data-tab="day3">
+            Day 03
+            <span>Mastery & Polish</span>
+          </button>
+        </div>
+
+        <!-- Tab Contents -->
+        
+        <!-- Day 1 Panel -->
+        <div class="agenda-pane active" id="day1-pane">
+          <div class="agenda-timeline">
+            <!-- Session 1 -->
+            <div class="agenda-item">
+              <div class="timeline-dot"></div>
+              <div class="agenda-time">09:00 AM - 11:30 AM EST</div>
+              <div class="agenda-card">
+                <h3>Introduction to Creative Syntax</h3>
+                <p>Establishing our creative playground. Building the core canvas coordinate systems, viewport normalization, and drawing loop setup from scratch.</p>
+                <div class="agenda-meta">
+                  <span class="agenda-meta-item">⏱️ 2.5 hrs</span>
+                  <span class="agenda-meta-item">💻 Code Lab 1</span>
+                </div>
+              </div>
+            </div>
+            <!-- Session 2 -->
+            <div class="agenda-item">
+              <div class="timeline-dot"></div>
+              <div class="agenda-time">01:00 PM - 03:30 PM EST</div>
+              <div class="agenda-card">
+                <h3>Physics & Vector Dynamics</h3>
+                <p>Unraveling vector math. Programming friction, gravity, boundary collision, and responsive nodes that respond directly to cursor vectors.</p>
+                <div class="agenda-meta">
+                  <span class="agenda-meta-item">⏱️ 2.5 hrs</span>
+                  <span class="agenda-meta-item">💻 Code Lab 2</span>
+                </div>
+              </div>
+            </div>
+            <!-- Session 3 -->
+            <div class="agenda-item">
+              <div class="timeline-dot"></div>
+              <div class="agenda-time">04:00 PM - 05:30 PM EST</div>
+              <div class="agenda-card">
+                <h3>Group Review & Project Genesis</h3>
+                <p>Peer review of physics labs. Ideation and wireframing of the graduation project, establishing templates, and workspace setups.</p>
+                <div class="agenda-meta">
+                  <span class="agenda-meta-item">⏱️ 1.5 hrs</span>
+                  <span class="agenda-meta-item">💡 Feedback Session</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 2 Panel -->
+        <div class="agenda-pane" id="day2-pane">
+          <div class="agenda-timeline">
+            <!-- Session 1 -->
+            <div class="agenda-item">
+              <div class="timeline-dot"></div>
+              <div class="agenda-time">09:00 AM - 11:30 AM EST</div>
+              <div class="agenda-card">
+                <h3>Entering the Shader World</h3>
+                <p>Migrating mathematical concepts onto the GPU. Writing GLSL syntax, defining vertex and fragment shaders, and binding variables with WebGL contexts.</p>
+                <div class="agenda-meta">
+                  <span class="agenda-meta-item">⏱️ 2.5 hrs</span>
+                  <span class="agenda-meta-item">💻 Code Lab 3</span>
+                </div>
+              </div>
+            </div>
+            <!-- Session 2 -->
+            <div class="agenda-item">
+              <div class="timeline-dot"></div>
+              <div class="agenda-time">01:00 PM - 03:30 PM EST</div>
+              <div class="agenda-card">
+                <h3>Advanced Shader Effects & Mesh</h3>
+                <p>Generating interactive noise, displacement maps, and colorful gradient meshes. Creating morphing abstract visual fields that float interactively.</p>
+                <div class="agenda-meta">
+                  <span class="agenda-meta-item">⏱️ 2.5 hrs</span>
+                  <span class="agenda-meta-item">💻 Code Lab 4</span>
+                </div>
+              </div>
+            </div>
+            <!-- Session 3 -->
+            <div class="agenda-item">
+              <div class="timeline-dot"></div>
+              <div class="agenda-time">04:00 PM - 05:30 PM EST</div>
+              <div class="agenda-card">
+                <h3>Optimizing Render Cycles</h3>
+                <p>Debugging memory leaks, performance profiling, and optimizing GPU resources. Ensuring seamless animations across devices.</p>
+                <div class="agenda-meta">
+                  <span class="agenda-meta-item">⏱️ 1.5 hrs</span>
+                  <span class="agenda-meta-item">🛠️ Optimization Lab</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 3 Panel -->
+        <div class="agenda-pane" id="day3-pane">
+          <div class="agenda-timeline">
+            <!-- Session 1 -->
+            <div class="agenda-item">
+              <div class="timeline-dot"></div>
+              <div class="agenda-time">09:00 AM - 11:30 AM EST</div>
+              <div class="agenda-card">
+                <h3>Next-Gen Layouts & Page Transitions</h3>
+                <p>Connecting Canvas/WebGL visual elements with HTML elements. Integrating View Transition API for fluid navigation structures.</p>
+                <div class="agenda-meta">
+                  <span class="agenda-meta-item">⏱️ 2.5 hrs</span>
+                  <span class="agenda-meta-item">💻 Code Lab 5</span>
+                </div>
+              </div>
+            </div>
+            <!-- Session 2 -->
+            <div class="agenda-item">
+              <div class="timeline-dot"></div>
+              <div class="agenda-time">01:00 PM - 03:30 PM EST</div>
+              <div class="agenda-card">
+                <h3>Scroll-Linked Animations & Micro-Interactions</h3>
+                <p>Creating immersive storytelling scrolls. Custom triggers, scroll velocity tracking, and magnetic buttons for high-end micro-interactions.</p>
+                <div class="agenda-meta">
+                  <span class="agenda-meta-item">⏱️ 2.5 hrs</span>
+                  <span class="agenda-meta-item">💻 Code Lab 6</span>
+                </div>
+              </div>
+            </div>
+            <!-- Session 3 -->
+            <div class="agenda-item">
+              <div class="timeline-dot"></div>
+              <div class="agenda-time">04:00 PM - 06:00 PM EST</div>
+              <div class="agenda-card">
+                <h3>Graduation Project Showcase & Awards</h3>
+                <p>Live review of students' custom portfolios. Group evaluations, expert critique, and digital certificate distribution.</p>
+                <div class="agenda-meta">
+                  <span class="agenda-meta-item">⏱️ 2.0 hrs</span>
+                  <span class="agenda-meta-item">🏆 Showcase & Panel</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faq">
+    <div class="section-bg-blob-1"></div>
+    <div class="section-bg-blob-2"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">FAQ</span>
+        <h2 class="section-title">Got <span class="text-gradient-cyan-blue">Questions?</span></h2>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span class="faq-question">Who is this workshop designed for?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            This workshop is tailored for developers, UI engineers, and technical designers who already possess solid knowledge of HTML, CSS, and basic JS, and want to level up their skills in creative coding, particle systems, layout animation APIs, and performant GPU-driven web graphics.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span class="faq-question">What technologies will we be using?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            We will focus purely on native web technologies: HTML5 Canvas, WebGL, GLSL Shaders, Modern CSS (Grid, Flexbox, custom properties), and vanilla JavaScript. No complex frameworks like React or Three.js are required, as we build from first principles.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span class="faq-question">Are the live streams recorded for later viewing?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            Yes! All live sessions, coding labs, and feedback panels will be recorded in 4K and made available to registered students, alongside source templates, resources, and exclusive community chat channels for lifetime access.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span class="faq-question">What are the hardware prerequisites?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            Any modern laptop or desktop (macOS, Windows, or Linux) with a web browser (Chrome, Firefox, or Safari) and a code editor installed (VS Code is recommended). Since we run GPU code, a dedicated graphics card is helpful but not strictly necessary.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <a href="#" class="logo">
+          <img src="logo.webp" alt="AstroCode Logo" class="logo-img">ASTROCODE
+        </a>
+        <p>A premier interactive coding workshop shaping the designers and developers of the next generation web.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Discord">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><circle cx="15" cy="10" r="2"></circle><path d="M8 18a5 5 0 0 0 8 0"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#learn">Syllabus</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-subscribe">
+        <h4>Stay Updated</h4>
+        <p>Get notified about schedule expansions, key speakers, and layout resource releases.</p>
+        <form class="subscribe-form" id="subscribe-form">
+          <input type="email" placeholder="Enter your email" required id="sub-email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 AstroCode Workshop. All rights reserved.</p>
+      <p>Designed for creative engineers.</p>
+    </div>
+  </footer>
+
+  <!-- Registration Modal Overlay -->
+  <div class="modal-overlay" id="registration-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Close Modal">&times;</button>
+      
+      <!-- Registration Form Area -->
+      <div id="modal-form-area">
+        <h3 class="modal-title">Secure Your Seat</h3>
+        <p class="modal-desc">Fill out your details to apply. Due to live coding infrastructure constraints, seats are strictly capped.</p>
+        
+        <form id="registration-form">
+          <div class="form-group">
+            <label for="reg-name">Full Name</label>
+            <input type="text" id="reg-name" required placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="reg-email">Email Address</label>
+            <input type="email" id="reg-email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="reg-role">Your Role</label>
+            <select id="reg-role" required>
+              <option value="" disabled selected>Select your current profile</option>
+              <option value="frontend">Frontend Developer</option>
+              <option value="designer">UI/UX Designer</option>
+              <option value="fullstack">Fullstack Engineer</option>
+              <option value="student">Student / Creative Hobbyist</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-submit">Submit Application</button>
+        </form>
+      </div>
+
+      <!-- Success Message Area (Hidden initially) -->
+      <div class="modal-success-state" id="modal-success-area">
+        <div class="success-icon">✓</div>
+        <h3 class="modal-title text-gradient-cyan-blue">Application Received!</h3>
+        <p class="modal-desc">Thank you for registering. We have sent a confirmation email alongside the setup workspace files to your inbox.</p>
+        <button class="btn-submit" id="success-close-btn">Awesome</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js?v=2"></script>
+</body>
+</html>
