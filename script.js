@@ -262,8 +262,8 @@ function initParticles() {
       this.speedX = (Math.random() - 0.5) * 0.5;
       this.speedY = (Math.random() - 0.5) * 0.5;
       
-      // Subtle variations in color
-      this.color = Math.random() > 0.5 ? 'rgba(0, 242, 254, 0.4)' : 'rgba(255, 0, 127, 0.3)';
+      // Subtle variations in golden colors
+      this.color = Math.random() > 0.5 ? 'rgba(229, 192, 96, 0.5)' : 'rgba(140, 98, 57, 0.35)';
     }
 
     update() {
@@ -324,7 +324,7 @@ function initParticles() {
         // Standard proximity connections
         if (distance < 110) {
           let alpha = (110 - distance) / 110 * 0.15;
-          ctx.strokeStyle = `rgba(155, 81, 224, ${alpha})`;
+          ctx.strokeStyle = `rgba(197, 160, 89, ${alpha})`;
           ctx.lineWidth = 1;
           ctx.beginPath();
           ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
@@ -341,8 +341,8 @@ function initParticles() {
         
         if (distance < mouse.radius) {
           let alpha = (mouse.radius - distance) / mouse.radius * 0.25;
-          // Gradient stroke between cyan and pink based on mouse position
-          ctx.strokeStyle = `rgba(0, 242, 254, ${alpha})`;
+          // Gradient stroke matching gold accent based on mouse position
+          ctx.strokeStyle = `rgba(229, 192, 96, ${alpha})`;
           ctx.lineWidth = 1.2;
           ctx.beginPath();
           ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
@@ -359,8 +359,8 @@ function initParticles() {
     
     // Draw background subtle gradient mesh (static layer inside canvas)
     let gradient = ctx.createRadialGradient(w/2, h/2, 10, w/2, h/2, Math.max(w, h));
-    gradient.addColorStop(0, '#0c0e1e');
-    gradient.addColorStop(1, '#06070e');
+    gradient.addColorStop(0, '#ffffff');
+    gradient.addColorStop(1, '#faf9f5');
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, w, h);
 
